@@ -1,0 +1,23 @@
+%{
+#include<stdio.h>
+int valid=0;
+%}
+
+%%
+(([_]|[a-z])+([(.)*]|[a-z])) {valid=1;}
+.+ valid=0; 
+%%
+
+int yywrap(void){return 1;}
+
+int main(){
+	printf("Enter the identifiers:");
+	yylex();
+	if(valid==1){
+	printf("\nIt is a valid Identifier");
+	}
+	else{
+	printf("\nIt is a invalid Identifier");
+	}
+return 0;
+}
