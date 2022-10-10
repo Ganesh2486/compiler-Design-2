@@ -1,21 +1,4 @@
 
-192125080
-/
-complier-design
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-complier-design/4.FIRST AND FOLLOW
-@192125080
-192125080 OUTPUT:
-…
- 1 contributor
-244 lines (212 sloc)  3.22 KB
 #include<stdio.h>
 #include<ctype.h>
 #include<string.h>
